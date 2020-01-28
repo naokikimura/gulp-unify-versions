@@ -2,7 +2,7 @@ import fs  from 'fs';
 import stream from 'stream';
 import Vinyl from 'vinyl';
 
-export default function unifyVersions(referenceFile = './package.json', key = 'version'): stream.Transform {
+export = function unifyVersions(referenceFile = './package.json', key = 'version'): stream.Transform {
   const encoding = 'utf8';
   const reference: string = JSON.parse(fs.readFileSync(referenceFile).toString(encoding)).version;
   return new stream.Transform({
