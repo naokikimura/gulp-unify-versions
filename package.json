@@ -1,6 +1,6 @@
 {
   "name": "gulp-unify-versions",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Unify the version numbers in manifest files",
   "main": "./dist/index.js",
   "scripts": {
